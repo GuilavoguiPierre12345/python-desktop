@@ -1,0 +1,222 @@
+{
+    "ShowLogs": true,
+    "QMainWindow": [
+        {
+            "tittle": "Magoe Education",
+            "icon": ":/logo.ico",
+            "frameless": true,
+            "transluscentBg": false,
+            "sizeGrip": "sizeGrip",
+            "navigation": [
+                {
+                    "minimize": "reduire",
+                    "close": "fermer",
+                    "restore": [
+                        {
+                            "buttonName": "agrandir",
+                            "normalIcon": ":/newPrefix/Icons/square.png",
+                            "maximizedIcon": ":/newPrefix/Icons/window_undock.png"
+                        }
+                    ],
+                    "moveWindow": "header",
+                    "tittleBar": "header"
+                }
+            ]
+        }
+
+    ],
+    "QSettings": [
+        {
+            "ThemeSettings": [
+                {
+                    "CustomTheme": []
+                }
+            ],
+            "AppSettings": {
+                "OrginizationName": "MagoeApp",
+                "ApplicationName": "MagoeApp Company",
+                "OrginizationDormain": "MagoeApp.org"
+            }
+        }
+    ],
+    "QPushButtonGroup": [
+        {
+            "Buttons": [
+                "homeBtn",
+                "scolariteBtn",
+                "gestionNoteBtn",
+                "helpBtn",
+                "aproposBtn"
+            ],
+            "Style": [
+                {
+                    "Active": "background-color: black;border-left:4px solid #cc5bce;font-weight:bold;",
+                    "NotActive": "background-color: transparent; border:none;"
+                }
+            ]
+        },
+        {
+            "Buttons": [
+                "scolariteInscriptionBtn",
+                "scolariteListeEleveBtn",
+                "scolariteFraisScolariteBtn",
+                "scolaritePayementFSBtn"
+            ],
+            "Style": [
+                {
+                    "Active": "background-color:#2E9C32;",
+                    "NotActive": "background-color: black;"
+                }
+            ]
+        }
+    ],
+    "QCustomSlideMenu": [
+        {
+            "name": "leftMenu",
+            "defaultSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "collapsedSize": [
+                {
+                    "width": 50,
+                    "height": "parent"
+                }
+            ],
+            "expandedSize": [
+                {
+                    "width": 230,
+                    "height": "parent"
+                }
+            ],
+            "toggleButton": [
+                {
+                    "buttonName": "menuBtn",
+                    "icons": [
+                        {
+                            "whenMenuIsCollapsed": "QSS/Icons/menu.png",
+                            "whenMenuIsExpanded": "QSS/Icons/chevron-left.png"
+                        }
+                    ]
+                }
+            ],
+            "menuTransitionAnimation": [
+                {
+                    "animationDuration": 500,
+                    "animationEasingCurve": "Linear"
+                }
+            ]
+        },
+        {
+            "name": "rightMenu",
+            "defaultSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "collapsedSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "expandedSize": [
+                {
+                    "width": 230,
+                    "height": "parent"
+                }
+            ],
+            "toggleButton": [
+                {
+                    "buttonName": "acountBtn",
+                    "icons": [
+                        {
+                            "whenMenuIsCollapsed": "QSS/Icons/user.png",
+                            "whenMenuIsExpanded": "QSS/Icons/chevron-right.png"
+                        }
+                    ]
+                }
+            ],
+            "menuTransitionAnimation": [
+                {
+                    "animationDuration": 500,
+                    "animationEasingCurve": "Linear"
+                }
+            ]
+        }
+    ],
+    "QStackedWidget": [
+        {
+            "name": "mainPages",
+            "transitionAnimation": [
+                {
+                    "fade": [
+                        {
+                            "active": true,
+                            "duration": 1000,
+                            "easingCurve": "OutBack"
+                        }
+                    ],
+                    "slide": [
+                        {
+                            "active": true,
+                            "duration": 1000,
+                            "direction": "horizontal",
+                            "easingCurve": "OutBack"
+                        }
+                    ]
+                }
+            ],
+            "navigation": [
+                {
+                    "navigationButtons": [
+                        {
+                            "homeBtn": "homePage",
+                            "scolariteBtn": "scolaritePage",
+                            "gestionNoteBtn": "gestionNotePage",
+                            "helpBtn": "helpPage",
+                            "aproposBtn": "aproposPage"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "scolariteSubMainContainer",
+            "transitionAnimation": [
+                {
+                    "fade": [
+                        {
+                            "active": true,
+                            "duration": 1000,
+                            "easingCurve": "OutBack"
+                        }
+                    ],
+                    "slide": [
+                        {
+                            "active": true,
+                            "duration": 1000,
+                            "direction": "vertical",
+                            "easingCurve": "OutBack"
+                        }
+                    ]
+                }
+            ],
+            "navigation": [
+                {
+                    "navigationButtons": [
+                        {
+                            "scolariteInscriptionBtn": "pageInscription",
+                            "scolariteListeEleveBtn": "pageListeEleves",
+                            "scolariteFraisScolariteBtn": "pageFraisScolarite",
+                            "scolaritePayementFSBtn": "pagePayementScolarite"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
