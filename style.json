@@ -1,0 +1,166 @@
+{
+  "QMainWindow": [
+    {
+      "tittle": "Magoe Education",
+      "icon": ":/logo.ico",
+      "frameless": true,
+      "transluscentBg": true,
+      "sizeGrip": "sizeGrip",
+      "navigation": [
+        {
+          "minimize": "minimizeBtn",
+          "close": "closeBtn",
+          "restore": [
+            {
+              "buttonName": "restoreBtn",
+              "normalIcon": ":/icons/icons/square.svg",
+              "maximizedIcon": ":/icons/icons/copy.svg"
+            }
+          ],
+          "moveWindow": "headerContainer",
+          "tittleBar": "headerContainer"
+        }
+      ]
+    }
+  ],
+  "QCustomSlideMenu": [
+    {
+      "name": "leftMenuContainer",
+      "defaultSize": [
+        {
+          "width": 60,
+          "height": "parent"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 60,
+          "height": "parent"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 170,
+          "height": "parent"
+        }
+      ],
+      "toggleButton": [
+        {
+          "buttonName": "menuBtn",
+          "icons": [
+            {
+              "whenMenuIsCollapsed": ":/icons/icons/align-justify.svg",
+              "whenMenuIsExpanded": ":/icons/icons/chevron-left.svg"
+            }
+          ]
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 500,
+          "animationEasingCurve": "Linear"
+        }
+      ]
+    },
+	  {
+		  "name": "centerMenuContainer",
+		  "defaultSize": [
+			  {
+				  "width": 0,
+				  "height": "parent"
+			  }
+		  ],
+		  "collapsedSize": [
+			  {
+				  "width": 0,
+				  "height": "parent"
+			  }
+		  ],
+		  "expandedSize": [
+			  {
+				  "width": 200,
+				  "height": "parent"
+			  }
+		  ],
+		  "menuTransitionAnimation": [
+			  {
+				  "animationDuration": 500,
+				  "animationEasingCurve": "Linear"
+			  }
+		  ]
+	  },
+    {
+      "name": "rightMenuContainer",
+      "defaultSize": [
+        {
+          "width": 0,
+          "height": "parent"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 0,
+          "height": "parent"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 200,
+          "height": "parent"
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 500,
+          "animationEasingCurve": "Linear"
+        }
+      ]
+    },
+    {
+      "name": "popupNotificationContainer",
+      "defaultSize": [
+        {
+          "width": 0,
+          "height": "auto"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 0,
+          "height": "auto"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 521,
+          "height": 100
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 500,
+          "animationEasingCurve": "Linear"
+        }
+      ],
+      "floatPosition": [
+        {
+          "relativeTo": "centralwidget",
+          "position": "bottom-center",
+          "shadow": [
+            {
+              "color": "#000",
+              "blurRadius": 20,
+              "xOffset": 0,
+              "yOffset": 0
+            }
+          ]
+        }
+      ],
+      "toggleButton": [
+        {
+          "buttonName": "notificationBtn"
+        }
+      ]
+    }
+  ]
+}
