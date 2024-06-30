@@ -1,0 +1,17 @@
+{
+    "ShowLogs": true,
+    "QMainWindow": [
+        {
+            "tittle": "Magoe Education",
+            "icon": ":/logo.ico",
+            "frameless": true,
+            "transluscentBg": false,
+            "navigation": [
+                {
+                    "close": "fermerFormulaireUpdateBtn"
+                }
+            ]
+        }
+
+    ]
+}

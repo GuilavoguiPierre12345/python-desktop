@@ -1,0 +1,55 @@
+{
+    "ShowLogs": true,
+    "QPushButtonGroup": [
+        {
+            "Buttons": [
+                "fraisRegimeExternatBtn",
+                "fraisRegimeSemiInternatBtn",
+                "fraisRegimeInternatBtn",
+                "fraisRegimeRevisionBtn"
+            ],
+            "Style": [
+                {
+                    "Active": "background-color: green;border:none;",
+                    "NotActive": "background-color: transparent; border:1px solid white;"
+                }
+            ]
+        }
+    ],
+    "QStackedWidget": [
+        {
+            "name": "pagesFraisScolarite",
+            "transitionAnimation": [
+                {
+                    "fade": [
+                        {
+                            "active": true,
+                            "duration": 1000,
+                            "easingCurve": "OutBack"
+                        }
+                    ],
+                    "slide": [
+                        {
+                            "active": true,
+                            "duration": 1000,
+                            "direction": "vertical",
+                            "easingCurve": "OutBack"
+                        }
+                    ]
+                }
+            ],
+            "navigation": [
+                {
+                    "navigationButtons": [
+                        {
+                            "fraisRegimeExternatBtn": "pageRegimeExternat",
+                            "fraisRegimeSemiInternatBtn": "pageRegimeSemiInternat",
+                            "fraisRegimeInternatBtn": "pageRegimeInternat",
+                            "fraisRegimeRevisionBtn": "pageRegimeRevision"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
